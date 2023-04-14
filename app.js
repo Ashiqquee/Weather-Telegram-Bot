@@ -22,7 +22,7 @@ bot.on('message', async (msg) => {
     try {
 
         if (msg.text == "/start") {
-            bot.sendMessage(chatId, "Welcome To Weather Checking Bot Created By Ashiqquee");
+            bot.sendMessage(chatId, "Welcome To Weather Checking Bot Created By Ashiqquee,Enter Your Place to Know Live Weather");
         } else {
             const response = await axios.get(
                 `https://api.openweathermap.org/data/2.5/weather?q=${userInput}&appid=0fbad7d5ac8fec3c6e0d2ca74f32a557`
